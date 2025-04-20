@@ -12,7 +12,6 @@ Another task (TaskB) periodically prints the latest average temperature value to
 - Uses task notifications to signal when a queue is full.
 - Protects shared variables with a mutex (FreeRTOS semaphore).
 - Spinlocks protect shared ISR resources (`currentQueue`).
-- Logs to console using `printf`.
 - Built on ESP-IDF with FreeRTOS primitives directly.
 
 ## Diagram
@@ -23,7 +22,7 @@ Here is an image that visually explains the challenge and the system behavior:
 
 ## Notes
 - Instead of an actual ADC channel, this project uses the ESP32-C3's built-in temperature sensor.
-- Serial input functionality is not fully implemented yet.
+- Serial input functionality is not implemented.
 - TaskB simply prints the latest computed average periodically.
 - Built assuming a single-core FreeRTOS setup (`CONFIG_FREERTOS_UNICORE`).
 - ISR dispatch method uses `ESP_TIMER_TASK` instead of `ESP_TIMER_ISR` due to ESP32-C3 limitations.
