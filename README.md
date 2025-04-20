@@ -29,7 +29,7 @@ Task B should echo any characters received over the serial port back to the same
 
 Here is an image that visually explains the challenge and the system behavior:
 
-![RTOS Timer Interrupt Challenge](https://www.digikey.com/maker-media/210ea308-747e-4827-978a-e7395e0487d3)
+![RTOS Timer Interrupt Challenge](img/diagram.jfif)
 
 ## Notes
 - Instead of an actual ADC channel, this project uses the ESP32-C3's built-in temperature sensor.
