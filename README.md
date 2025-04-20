@@ -26,9 +26,3 @@ Here is an image that visually explains the challenge and the system behavior:
 - TaskB simply prints the latest computed average periodically.
 - Built assuming a single-core FreeRTOS setup (`CONFIG_FREERTOS_UNICORE`).
 - ISR dispatch method uses `ESP_TIMER_TASK` instead of `ESP_TIMER_ISR` due to ESP32-C3 limitations.
-
-## How It Works
-- Timer interrupt triggers `readTemp()` every 250ms.
-- Alternating queues store temperature samples.
-- When 10 samples are collected, a task computes the average.
-- Average is stored safely and can be printed by another task.
