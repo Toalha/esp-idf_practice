@@ -1,4 +1,4 @@
-### This project is a simple FreeRTOS-based application using ESP-IDF on an ESP32-C3 board.
+### This is a simple FreeRTOS-based application using ESP-IDF on an ESP32-C3 board.
 
 It reads temperature data using the internal temperature sensor, triggered by a periodic software timer (simulating an ADC interrupt). The temperature values are stored in two queues alternately. When a queue fills up, a task (TaskA) computes the average of the collected values.
 
