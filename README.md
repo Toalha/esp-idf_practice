@@ -14,9 +14,9 @@ Another task (TaskB) periodically prints the latest average temperature value to
 
 ## Diagram
 
-Here is an image that visually explains the challenge and the system behavior:
+Here is an image that visually explains the system behavior:
 
-<img src="img/diagram.jfif" alt="RTOS Timer Interrupt Challenge" width="700"/>
+<img src="img/diagram.jfif" alt="RTOS timer tasks" width="700"/>
 
 ## Notes
 - Instead of an actual ADC channel, this project uses the ESP32-C3's built-in temperature sensor.
